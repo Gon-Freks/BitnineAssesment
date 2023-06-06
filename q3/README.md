@@ -1,9 +1,9 @@
-The development environment:
-Ubuntu 20.04.2 LTS
-NodeJS v16.17.0
-pg package ^8.11.0
+# The development environment:
+- Ubuntu 20.04.2 LTS
+- NodeJS v16.17.0
+- pg package ^8.11.0
 
-How to get started:
+# How to get started:
 - head to the q3 folder and run `npm install` to install the dependencies.
 - open a terminal and run `sudo service postgresql start` to start the postgresql service.
 - run `psql -U postgres`
@@ -32,9 +32,9 @@ VALUES (1, 'John', 28, NULL);
 - enter `\q` to exit the psql shell.
 - run `node index.js` to start the server.
 - the server will run the following query
-```
-SELECT * FROM public.user_table;
-```
+>> ```
+>> SELECT * FROM public.user_table;
+>> ```
 
 - the output in the terminal will be as following:
 Result: {"status_code":200,"data":[{"user_id":"3","name":"Jenny","age":"34","phone":null},{"user_id":"2","name":"Tom","age":"29","phone":"1-800-123-1234"},{"user_id":"1","name":"John","age":"28","phone":null}]}
